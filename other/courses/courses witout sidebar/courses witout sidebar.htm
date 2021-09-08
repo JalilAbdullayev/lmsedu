@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Course</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="#"><b>LMS</b>edu</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" style="font: 600 1em Open Sans;letter-spacing: 0px; line-height: 20px;
+                        color: #f2f7ff;" href="#">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" style="font: 600 1em Open Sans; letter-spacing: 0px; line-height: 20px;
+                        color: #f2f7ff;" href="courses/courses.htm">Courses</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" style="font: 600 1em Open Sans; letter-spacing: 0px; line-height: 20px;
+                        color: #f2f7ff;" href="blog/blog.htm">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" style="font: 600 1em Open Sans; letter-spacing: 0px; line-height: 20px;
+                        color: #f2f7ff;" href="contact/contact.htm">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" style="font: 600 1em Open Sans; letter-spacing: 0px; line-height: 20px;
+                        color: #f2f7ff;" href="about/about.htm">About</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+				<button class="btn btn-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+			</form>
+		</div>
+	</nav>
+
+	<div class="row" id="courses">
+		<div class="col-2">
+			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<a class="nav-link active" id="v-pills-all-tab" data-toggle="pill" href="#v-pills-all" role="tab"
+					aria-controls="v-pills-all" aria-selected="true"><i class="fas fa-graduation-cap"></i>All</a>
+				<a class="nav-link" id="v-pills-development-tab" data-toggle="pill" href="#v-pills-development"
+					role="tab" aria-controls="v-pills-development" aria-selected="false"><i
+						class="fas fa-code"></i>Development</a>
+				<a class="nav-link" id="v-pills-software-tab" data-toggle="pill" href="#v-pills-software" role="tab"
+					aria-controls="v-pills-software" aria-selected="false"><i class="fas fa-desktop"></i>Software</a>
+				<a class="nav-link" id="v-pills-design-tab" data-toggle="pill" href="#v-pills-design" role="tab"
+					aria-controls="v-pills-design" aria-selected="false"><i class="fas fa-paint-brush"></i>Design</a>
+				<a class="nav-link" id="v-pills-business-tab" data-toggle="pill" href="#v-pills-business" role="tab"
+					aria-controls="v-pills-business" aria-selected="false"><i class="fas fa-briefcase"></i>Business</a>
+				<a class="nav-link" id="v-pills-lifestyle-tab" data-toggle="pill" href="#v-pills-lifestyle" role="tab"
+					aria-controls="v-pills-lifestyle" aria-selected="false"><i class="fas fa-leaf"></i>Lifestyle</a>
+				<a class="nav-link" id="v-pills-photography-tab" data-toggle="pill" href="#v-pills-photography"
+					role="tab" aria-controls="v-pills-photography" aria-selected="false"><i
+						class="fas fa-camera"></i>Photography</a>
+				<a class="nav-link" id="v-pills-joomla-tab" data-toggle="pill" href="#v-pills-joomla" role="tab"
+					aria-controls="v-pills-joomla" aria-selected="false"><i class="fab fa-joomla"></i>Joomla</a>
+				<a class="nav-link" id="v-pills-wordpress-tab" data-toggle="pill" href="#v-pills-wordpress" role="tab"
+					aria-controls="v-pills-wordpress" aria-selected="false"><i
+						class="fab fa-wordpress"></i>Wordpress</a>
+				<a class="nav-link" id="v-pills-language-tab" data-toggle="pill" href="#v-pills-language" role="tab"
+					aria-controls="v-pills-language" aria-selected="false"><i class="fas fa-language"></i>Language</a>
+				<a class="nav-link" id="v-pills-music-tab" data-toggle="pill" href="#v-pills-music" role="tab"
+					aria-controls="v-pills-music" aria-selected="false"><i class="fas fa-music"></i>Music</a>
+				<a class="nav-link" id="v-pills-photoshop-tab" data-toggle="pill" href="#v-pills-photoshop" role="tab"
+					aria-controls="v-pills-photoshop" aria-selected="false"><i class="fas fa-image"></i>Photoshop</a>
+				<a class="nav-link" id="v-pills-medicine-tab" data-toggle="pill" href="#v-pills-medicine" role="tab"
+					aria-controls="v-pills-medicine" aria-selected="false"><i class="fas fa-heartbeat"></i>Medicine</a>
+			</div>
+		</div>
+		<div class="col-10">
+			<div class="tab-content" id="v-pills-tabContent">
+				<div class="tab-pane fade show active" id="v-pills-all" role="tabpanel"
+					aria-labelledby="v-pills-all-tab">
+					<div class="row row-cols-1 row-cols-md-3" id="courses">
+						<div class="col mb-4">
+							<div class="card course photography">
+								<div class="card-img-top">
+									<img src="../img/photography.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Conceptual Art, Photography and Wild Life</a>
+									</h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-4">
+							<div class="card course lifestyle">
+								<div class="card-img-top">
+									<img src="../img/lifecycle.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Lifestyle Archives - The Times to Change Your
+											Life</a></h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-4">
+							<div class="card course language">
+								<div class="card-img-top">
+									<img src="../img/language.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Cambridge English Exam Preparation</a></h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-4">
+							<div class="card course development">
+								<div class="card-img-top">
+									<img src="../img/freelancing.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Freelancing For Developers : A Complete
+											Freelancing
+											Course</a>
+									</h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-4">
+							<div class="card course music">
+								<div class="card-img-top">
+									<img src="../img/music.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Introduction to Fusion of Acoustic Guitar</a>
+									</h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-4">
+							<div class="card course all">
+								<div class="card-img-top">
+									<img src="../img/math.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Basic Mathematics - Inroduction to Geometry</a>
+									</h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="v-pills-development" role="tabpanel"
+					aria-labelledby="v-pills-development-tab">
+					<div class="row row-cols-1 row-cols-md-3" id="courses">
+						<div class="col mb-4">
+							<div class="card course development">
+								<div class="card-img-top">
+									<img src="../img/freelancing.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Freelancing For Developers : A Complete
+											Freelancing
+											Course</a>
+									</h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-4">
+							<div class="card course development">
+								<div class="card-img-top">
+									<img src="../img/freelancing.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Freelancing For Developers : A Complete
+											Freelancing
+											Course</a>
+									</h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium
+										enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-4">
+							<div class="card course development">
+								<div class="card-img-top">
+									<img src="../img/freelancing.jpg" alt="..." />
+									<a href="#!"><button>APPLY NOW <i
+												class="fas fa-angle-double-right"></i></button></a>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="#">Freelancing For Developers : A Complete
+											Freelancing
+											Course</a>
+									</h5>
+									<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Accusantium
+										enim
+										obcaecati odit perferendis et laudantium minus veniam officiis rerum facere?</p>
+									<span>$159.00</span>
+									<div id="rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star-half-alt"></i>
+										<i class="far fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="v-pills-software" role="tabpanel" aria-labelledby="v-pills-software-tab">
+					...</div>
+				<div class="tab-pane fade" id="v-pills-medicine" role="tabpanel" aria-labelledby="v-pills-medicine-tab">
+					...</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="row">
+			<div id="help" class="col">
+				<h1>Help Center:</h1>
+				<ul>
+					<a href="">
+						<li>Documentations</li>
+					</a>
+					<a href="">
+						<li>Tutorials</li>
+					</a>
+					<a href="">
+						<li>Terms of Use</li>
+					</a>
+					<a href="">
+						<li>Privacy Policy</li>
+					</a>
+				</ul>
+			</div>
+			<div class="col">
+				<h1>About Us:</h1>
+				<ul>
+					<a href="">
+						<li>Our Team</li>
+					</a>
+					<a href="">
+						<li>Company</li>
+					</a>
+					<a href="">
+						<li>Jobs</li>
+					</a>
+					<a href="">
+						<li>News Latter</li>
+					</a>
+				</ul>
+			</div>
+			<div class="col">
+				<h1>Tools:</h1>
+				<ul>
+					<a href="">
+						<li>Create Account</li>
+					</a>
+					<a href="">
+						<li>Log In</li>
+					</a>
+					<a href="">
+						<li>Services</li>
+					</a>
+					<a href="">
+						<li>Sitemap</li>
+					</a>
+				</ul>
+			</div>
+			<div class="col">
+				<h1>Get In Touch:</h1>
+				<ul>
+					<a href="">
+						<li>Contact Us</li>
+					</a>
+					<a href="">
+						<li>Join Us</li>
+					</a>
+					<a href="">
+						<li>Invite Us</li>
+					</a>
+					<a href="">
+						<li>Donate</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		<hr />
+		<div id="copyright">Copyright © 2017 LMS EDUCATION. All Rights Reserved</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ae4ff8f907.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5e9ef67e35bcbb0c9ab342e6/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+</body>
+
+</html>
