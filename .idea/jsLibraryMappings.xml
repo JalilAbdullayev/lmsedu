@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{sweetalert}" />
+    <file url="PROJECT" libraries="{ae4ff8f907, flickity, jquery-3.5.1.slim, popper.js, sweetalert}" />
   </component>
 </project>

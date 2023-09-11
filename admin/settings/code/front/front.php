@@ -15,7 +15,7 @@ $Nizam = new Nizamlamalar;
 $Haqqinda = new Haqqinda;
 //code
 
-if ($Umumi->CariSehifeAdi() != "index") {
+if ($Umumi->CariSehifeAdi() !== "index") {
     $Umumi->REFERER();
 }
 

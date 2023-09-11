@@ -17,7 +17,7 @@ var Tawk_API = Tawk_API || {},
 
 $(".main-carousel").flickity({
     cellAlign: "center",
-    contain: true,
+    contain: true
 });
 
 function openNav() {
